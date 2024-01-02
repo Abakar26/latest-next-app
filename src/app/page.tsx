@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MyProfilePic from "./components/MyProfilePic";
 
 export default function Home() {
   return (
@@ -7,6 +8,15 @@ export default function Home() {
       <p>
         <Link href={'/users'}>Users</Link>
       </p>
+      <div className="mx-auto px-6">
+        <p className="mt-12 mb-12 text-3xl text-center dark:text-white">
+          Hello and Welcome 👋🏾
+          <span className="whitespace-nowrap">
+            I am <span className="font-bold">AB</span>
+          </span>
+        </p>
+        <MyProfilePic />
+      </div>
     </main>
   )
 }
